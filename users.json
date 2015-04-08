@@ -1,0 +1,127 @@
+{
+  
+  "users": [
+    {
+      "name": "Shivam",
+	  "id": 0,
+      "password": "test",
+      "friends": [1,2],
+	  "friendRequests":[],
+	  "age":23,
+	  "city":"gurgaon",
+      "wall": [
+	      {
+		      "postedBy":"Tony Stark",
+		      "post": "The time you enjoy waisting is not waisted time!!",
+		      "date": "15/05/2014",
+		      "postedOn": 0
+	      },
+
+	      {
+		      "postedBy":"Tony Stark",
+		      "post": "Brains are awesome. I wish everyone had one!!!",
+		      "date": "18/06/2014",
+		      "postedOn": 0
+	      },
+
+	      {
+		      "postedBy":"Goku",
+		      "post": "Abraa ka Dabraa",
+		      "date": "07/09/2014",
+		      "postedOn": 0
+	      }
+
+      ]
+    },
+
+	{
+		"name": "Tony Stark",
+		"id": 1,
+		"password": "test",
+		"friends": [0],
+		"friendRequests":[],
+		"age":28,
+		"city":"New York",
+		  "wall": [
+			  {
+				  "postedBy":"Shivam",
+				  "post": "hi Iron Man!!",
+				  "date": "15/05/2014",
+				  "postedOn": 1
+			  },
+
+			  {
+				  "postedBy":"Goku",
+				  "post": "Abraa ka Dabraa",
+				  "date": "18/06/2014",
+				  "postedOn": 1
+			  },
+
+			  {
+				  "postedBy":"Shivam",
+				  "post": "Abraa ka Dabraa",
+				  "date": "07/09/2014",
+				  "postedOn": 1
+			  }
+
+		  ]
+	},
+
+    {
+		  "name": "Goku",
+	    "id": 2,
+		  "password": "test",
+		  "friends": [0],
+	    "friendRequests":[],
+	    "age":69,
+	    "city":"Gaya",
+		  "wall": [
+			  {
+				  "postedBy":"Shivam",
+				  "post": "ohh did you collect all the dragon balls!!",
+				  "date": "15/05/2014",
+				  "postedOn": 2
+			  },
+
+			  {
+				  "postedBy":"Tony Stark",
+				  "post": "I am iron man",
+				  "date": "18/06/2014",
+				  "postedOn": 2
+			  },
+
+			  {
+				  "postedBy":"Tony Stark",
+				  "post": "Abraa ka Dabraa",
+				  "date": "07/09/2014",
+				  "postedOn": 2
+			  }
+
+		  ]
+    },
+
+	  {
+		  "name": "john",
+		  "id": 3,
+		  "password": "test",
+		  "friends": [],
+		  "friendRequests":[],
+		  "age":28,
+		  "city":"New Delhi",
+		  "wall": [ ]
+	  },
+
+	  {
+		  "name": "test",
+		  "id": 4,
+		  "password": "test",
+		  "friends": [],
+		  "friendRequests":[],
+		  "age":16,
+		  "city":"Vegas",
+		  "wall": [ ]
+	  }
+
+
+  ]
+}
