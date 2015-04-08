@@ -1,0 +1,71 @@
+<!--Bootstrap Model for friend request Popup-->
+<div class="modal fade" id="friendRequestPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">You have {{numberOfFriendRequests}} friend request(s)!!</h4>
+            </div>
+            <div class="modal-body">
+
+                <dl id="friendRequestsList">
+                    {{#each friendRequests}}
+                        <dt>"{{fromName}}" wants to be your friend!</dt>
+                        <dd> <button id="confirm{{fromId}}" class="btn btn-primary btn-sm"> Confirm!! </button> </dd>
+                    {{/each}}
+                </dl>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="ignore">Ignore</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class=" page-header ">
+    <h1 class="h1"> Welcome {{userName}}!!</h1>
+</div>
+
+<!-- BootsTrap nav tabs  -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#navigate" role="tab" data-toggle="tab">navigate</a></li>
+    <li><a href="#usersProfile" role="tab" data-toggle="tab">My profile</a></li>
+</ul>
+
+
+<div class="tab-content">
+
+    <div class="tab-pane active" id="navigate">
+        <div class="container-fluid center-block">
+
+            <div class="row">
+                <div class="btn-lg btn btn-default col-lg-3 col-sm-5 col-md-4 text-center h2 options" id="wallButton">Wall</div>
+            </div>
+
+            <div class="row">
+                <div class="btn-lg btn btn-default col-lg-3 col-sm-5 col-md-4 text-center h2 options" id="friendsButton">Friends</div>
+            </div>
+
+            <div class="row">
+                <div class="btn-lg btn btn-default col-lg-3 col-sm-5 col-md-4 text-center h2 options" id="allUsersButton">All Users</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tab-pane" id="usersProfile">
+        <div class="jumbotron alert-info">
+
+            <ul class="list-group">
+                <li><b>Name: </b> {{userName}}</li><br>
+                <li><b>Age: </b>{{age}}</li><br>
+                <li><b>From: </b>{{city}}</li><br>
+            </ul>
+
+        </div>
+    </div>
+
+</div>

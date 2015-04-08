@@ -1,0 +1,19 @@
+body{
+    zoom: 80%;
+}
+
+.options{
+    cursor: pointer;
+}
+
+#header {
+    zoom: 90%;
+}
+
+.jumbotron {
+    zoom: 80%;
+}
+
+ul{
+    zoom: 150%;
+}

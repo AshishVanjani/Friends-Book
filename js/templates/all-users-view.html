@@ -1,0 +1,16 @@
+<div class="h1">
+    Welcome {{userName}}!!
+</div>
+
+<div class="h2 jumbotron alert-info" id="allUser">List of all users are:-</div>
+<dl id="listOfUsers">
+    {{#each friends}}
+    <dt>
+        <div class="jumbotron alert-link h3 options" id="{{id}}">
+            {{name}}
+            <button class="btn btn-lg btn-success invisible pull-right" id="friendRequestBtn{{id}}">Add Friend</button>
+
+        </div>
+    </dt>
+    {{/each}}
+</dl>

@@ -1,0 +1,10 @@
+<div class="h1">
+    Welcome {{userName}}!!
+</div>
+
+<div class="h2 jumbotron alert-info">Your Friends are:-</div>
+        <dl id="listOfFriends">
+            {{#each friends}}
+            <dt><div class="jumbotron h3 options" id="{{id}}"> {{name}}</div></dt>
+            {{/each}}
+        </dl>

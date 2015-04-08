@@ -1,0 +1,46 @@
+<div class="h1">
+    Welcome {{userName}}!!
+</div>
+<br>
+
+<ul class="nav nav-tabs" role="tablist">
+
+    <li class="active"><a href="#usersWall" role="tab" data-toggle="tab">{{user}}'s Wall</a></li>
+    <li><a href="#usersProfile" role="tab" data-toggle="tab">{{user}}'s Profile</a></li>
+
+</ul>
+
+<div class="tab-content">
+
+    <div class="tab-pane active" id="usersWall">
+        <dl id="wallPostList">
+            {{#each wallPosts}}
+            <div class=" h3 col-lg-9 col-md-9 col-sm-9 center-block">
+                <dt>Posted by "{{postedBy}}" on {{date}}</dt>
+                <dd>{{post}}</dd>
+            </div>
+            {{/each}}
+        </dl>
+        <div id="postOnWall" class="invisible">
+            <form id="wallForm" role="form">
+
+                <div class="form-group">
+                    <input type="text" id="textToPost" class="form-control" placeholder="Write a post">
+                </div>
+
+                <button id="postButton" class="btn">Post</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="usersProfile">
+        <div class="jumbotron alert-info">
+            <ul class="list-group">
+                <li><b>Name: </b> {{user}}</li><br>
+                <li><b>Age: </b>{{age}}</li><br>
+                <li><b>From: </b>{{city}}</li><br>
+            </ul>
+        </div>
+    </div>
+
+</div>
